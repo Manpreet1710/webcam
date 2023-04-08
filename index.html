@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Take photos online with over 80 fun effects</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home">
+	<canvas id="toy-bg"></canvas>
+
+	<article id="content">
+		<section id="home">
+			<div id="home-body">
+				<h1><span>Webcam Toy</span></h1>
+				<p id="home-main">
+					<span class="small">Take selfies with over 80 fun&nbsp;effects!</span>
+				</p>
+				<div id="button-init" class="button hot-pink">
+					<div class="arrow"></div>
+					<p>Ready? Smile!</p>
+				</div>
+				<noscript>
+					<div id="home-no-js" class="warning">Please <a href="https://enable-javascript.com/"
+							target="_blank">enable JavaScript</a> to use Webcam Toy.</div>
+				</noscript>
+			</div>
+		</section>
+		<section id="app">
+			<div id="toy" data-version="325">
+				<div id="toy-intro">
+					<div id="toy-intro-prompt">
+						<p class="prompt request">Press the button to access your&nbsp;camera:</p>
+						<p class="prompt request-error">Please try again!</p>
+						<p class="prompt access">Please allow access!</p>
+						<p class="prompt access-above"><span class="arrow rotate-270"></span>Allow access from the
+							menu&nbsp;above<span class="arrow rotate-270"></span></p>
+						<p class="prompt loading">Loading&hellip;</p>
+						<p class="prompt error">Sorry, there was a problem.</p>
+						<div class="prompt incapable warning">Sorry, Webcam Toy does not work in this
+							web&nbsp;browser.<br>Please try using <a href="https://www.mozilla.org/firefox/"
+								target="_blank">Firefox</a> or&nbsp;<a href="https://www.apple.com/safari/"
+								target="_blank">Safari</a>.</div>
+					</div>
+					<div id="toy-start">
+						<div id="button-start" class="button hot-pink hidden">
+							<div class="icon"></div>
+							<p>Use my camera</p>
+						</div>
+						<a href="./" rel="nofollow" id="button-reload" class="button hot-pink">
+							<div class="arrow"></div>
+							<p>Please try again!</p>
+						</a>
+					</div>
+					<noscript>
+						<div id="app-no-js" class="warning">Please <a href="https://enable-javascript.com/"
+								target="_blank">enable JavaScript</a> to use Webcam Toy.</div>
+					</noscript>
+					<footer>
+						<p id="footer-denied">Please enable camera access in your web browser’s&nbsp;settings.</p>
+						<p id="footer-unavailable">Close all other websites and programs that may be using your camera
+							(Skype, chat&nbsp;etc.)</p>
+						<p id="footer-message">Photos are <strong>not</strong> stored online unless you choose to
+							share&nbsp;them.</p>
+					</footer>
+				</div>
+				<div id="toy-main">
+					<div id="toy-grid">
+						<div id="grid-view">
+							<div>
+								<div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+									<div>
+										<div class="grid-shadow"><canvas></canvas></div>
+										<p></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="grid-ui">
+							<div id="button-up" class="button hot-pink">
+								<div class="arrow rotate-270"></div>
+							</div>
+							<div id="button-down" class="button hot-pink">
+								<div class="arrow rotate-90"></div>
+							</div>
+						</div>
+					</div>
+					<div id="toy-view">
+						<canvas></canvas>
+						<p id="toy-countdown" class="countdown-center"></p>
+					</div>
+					<div id="toy-ui">
+						<div id="settings">
+							<div id="button-settings" class="button hot-pink">
+								<div class="icon"></div>
+							</div>
+							<form>
+								<div class="popup">
+									<fieldset>
+										<div>
+											<div class="checkbox hot-pink"></div>
+											<input type="checkbox" id="setting-mirror" value="mirror">
+											<label for="setting-mirror">Mirror</label>
+										</div>
+										<div>
+											<div class="checkbox hot-pink"></div>
+											<input type="checkbox" id="setting-square" value="square">
+											<label for="setting-square">Square</label>
+										</div>
+										<div>
+											<div class="checkbox hot-pink"></div>
+											<input type="checkbox" id="setting-countdown" value="countdown">
+											<label for="setting-countdown">Countdown</label>
+										</div>
+										<div>
+											<div class="checkbox hot-pink"></div>
+											<input type="checkbox" id="setting-flash" value="flash">
+											<label for="setting-flash">Flash</label>
+										</div>
+										<div>
+											<div class="checkbox hot-pink"></div>
+											<input type="checkbox" id="setting-full-screen" value="full-screen">
+											<label for="setting-full-screen">Full Screen</label>
+										</div>
+									</fieldset>
+								</div>
+								<div class="anchor"></div>
+							</form>
+						</div>
+						<div id="button-previous" class="button hot-pink">
+							<div class="arrow rotate-180"></div>
+						</div>
+						<div id="button-effects" class="button hot-pink">
+							<p class="more">More effects&hellip;</p>
+							<p class="loading"><span class="text">Loading&hellip; </span><span class="pc"></span></p>
+							<p class="effect effect-normal">Normal</p>
+							<p class="effect effect-alien">Alien</p>
+							<p class="effect effect-berry">Berry</p>
+							<p class="effect effect-blackwhite">Black &amp; White</p>
+							<p class="effect effect-bloom">Bloom</p>
+							<p class="effect effect-bokeh">Bokeh</p>
+							<p class="effect effect-bulge">Bulge</p>
+							<p class="effect effect-cartoon">Cartoon</p>
+							<p class="effect effect-citrus">Citrus</p>
+							<p class="effect effect-cocktail">Cocktail</p>
+							<p class="effect effect-cocoa">Cocoa</p>
+							<p class="effect effect-colorghost">Colour Ghost</p>
+							<p class="effect effect-comicbook">Comic Book</p>
+							<p class="effect effect-comicstrip">Comic Strip</p>
+							<p class="effect effect-crosshatch">Crosshatch</p>
+							<p class="effect effect-danger">Danger</p>
+							<p class="effect effect-dent">Dent</p>
+							<p class="effect effect-disco">Disco</p>
+							<p class="effect effect-envy">Envy</p>
+							<p class="effect effect-filmstrip">Filmstrip</p>
+							<p class="effect effect-fire">Fire</p>
+							<p class="effect effect-fisheye">Fisheye</p>
+							<p class="effect effect-flare">Flare</p>
+							<p class="effect effect-fragment">Fragment</p>
+							<p class="effect effect-ghost">Ghost</p>
+							<p class="effect effect-glaze">Glaze</p>
+							<p class="effect effect-glitch">Glitch</p>
+							<p class="effect effect-halo">Halo</p>
+							<p class="effect effect-hazydays">Hazy Days</p>
+							<p class="effect effect-hotpink">Hot Pink</p>
+							<p class="effect effect-kaleidoscope">Kaleidoscope</p>
+							<p class="effect effect-lomo">Lomo</p>
+							<p class="effect effect-lomoquad">Lomo Quad</p>
+							<p class="effect effect-lsd">LSD</p>
+							<p class="effect effect-magazine">Magazine</p>
+							<p class="effect effect-mint">Mint</p>
+							<p class="effect effect-mirrorbottom">Bottom Mirror</p>
+							<p class="effect effect-mirrorleft">Left Mirror</p>
+							<p class="effect effect-mirrorquad">Quad Mirror</p>
+							<p class="effect effect-mirrorright">Right Mirror</p>
+							<p class="effect effect-mirrortop">Top Mirror</p>
+							<p class="effect effect-mono">Mono</p>
+							<p class="effect effect-monoquad">Mono Quad</p>
+							<p class="effect effect-neon">Neon</p>
+							<p class="effect effect-nightvision">Night Vision</p>
+							<p class="effect effect-oldmovie">Old Movie</p>
+							<p class="effect effect-outline">Outline</p>
+							<p class="effect effect-pinch">Pinch</p>
+							<p class="effect effect-popart">Pop Art</p>
+							<p class="effect effect-popbooth">Pop Booth</p>
+							<p class="effect effect-quadcam">Quad Cam</p>
+							<p class="effect effect-rainbow">Rainbow</p>
+							<p class="effect effect-retro">Retro</p>
+							<p class="effect effect-ripple">Ripple</p>
+							<p class="effect effect-rose">Rose</p>
+							<p class="effect effect-shuffle">Shuffle</p>
+							<p class="effect effect-silk">Silk</p>
+							<p class="effect effect-sketch">Sketch</p>
+							<p class="effect effect-smoke">Smoke</p>
+							<p class="effect effect-snow">Snow</p>
+							<p class="effect effect-softfocus">Soft Focus</p>
+							<p class="effect effect-sparkle">Sparkle</p>
+							<p class="effect effect-spectrum">Spectrum</p>
+							<p class="effect effect-spiral">Spiral</p>
+							<p class="effect effect-splitscreen">Split Screen</p>
+							<p class="effect effect-spycam">Spy Cam</p>
+							<p class="effect effect-stretch">Stretch</p>
+							<p class="effect effect-switch">Switch</p>
+							<p class="effect effect-thermal">Thermal</p>
+							<p class="effect effect-trail">Trail</p>
+							<p class="effect effect-trueblue">True Blue</p>
+							<p class="effect effect-tunnel">Tunnel</p>
+							<p class="effect effect-twist">Twist</p>
+							<p class="effect effect-underwater">Underwater</p>
+							<p class="effect effect-upsidedown">Upside-Down</p>
+							<p class="effect effect-vintage">Vintage</p>
+							<p class="effect effect-watercolor">Watercolour</p>
+							<p class="effect effect-wedge">Wedge</p>
+							<p class="effect effect-xpro">X-Pro</p>
+							<p class="effect effect-xray">X-Ray</p>
+							<p class="effect effect-zinc">Zinc</p>
+							<p class="effect plus"></p>
+						</div>
+						<div id="button-next" class="button hot-pink">
+							<div class="arrow"></div>
+						</div>
+						<div id="capture">
+							<div id="button-capture" class="button hot-pink">
+								<div class="icon"></div>
+							</div>
+							<p id="capture-text">Take a photo</p>
+							<p id="capture-quad-text">Take 4 photos</p>
+						</div>
+					</div>
+					<div id="photo">
+						<img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAAACAkQBADs=" width="800"
+							height="600" alt="">
+						<form>
+							<fieldset>
+								<input type="text" value="" placeholder=""
+									data-alt="Playing with Webcam Toy|Taking photos with Webcam Toy|Just took this photo with Webcam Toy"
+									maxlength="245" class="photo-shadow">
+								<input type="hidden" value="Playing with the %s effect on Webcam Toy">
+								<input type="hidden" value="Just took this %s pic on Webcam Toy">
+								<input type="hidden" value="I <3 this %s effect on Webcam Toy">
+								<input type="hidden" value="My %s photo from Webcam Toy :)">
+								<p>&nbsp;</p>
+							</fieldset>
+						</form>
+					</div>
+					<div id="toy-share-ui">
+						<div id="button-back" class="button hot-pink">
+							<div class="arrow rotate-180"></div>
+							<p>Back</p>
+						</div>
+						<a data-save="webcam-toy-photo.jpg" id="button-save" class="button hot-pink">
+							<div class="arrow rotate-90"></div>
+							<p>Save</p>
+						</a>
+					</div>
+					<div id="camera-flash"></div>
+				</div>
+			</div>
+		</section>
+	</article>
+
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js""></script>
+	<script src=" /app.js"></script>
+
+</body>
+
+</html>
